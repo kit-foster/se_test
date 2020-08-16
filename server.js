@@ -37,6 +37,6 @@ app.listen(PORT, () => {
 });
 
 // load routes
-app.get('/', (req, res) => {
-    res.send({ok: false, text: 'hello world'});
-});
+const userRouter = require('./routes/user');
+
+app.use('/user', userRouter);
