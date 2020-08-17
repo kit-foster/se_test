@@ -32,7 +32,7 @@ mongoose
 // Specify which port and start listening
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log("listening on " + PORT);
 });
 
@@ -40,3 +40,5 @@ app.listen(PORT, () => {
 const userRouter = require('./routes/user');
 
 app.use('/user', userRouter);
+
+module.exports = server;
