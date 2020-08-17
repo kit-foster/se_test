@@ -12,7 +12,6 @@ describe('get users', function() {
             .end((err, result)=>{
                 result.should.have.status(200);
                 console.log ("Res:", result.body);
-                //console.log ("Result Body:", result.body);
                 
                 done()
         })

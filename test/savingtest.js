@@ -11,7 +11,7 @@ describe('saving records', function() {
 
     it('saves a user to the DB', function(done) {
         var user01 = new User({
-            username: 'sophie'
+            username: 'danny'
         });
         
         chai.request('http://localhost:5000')
