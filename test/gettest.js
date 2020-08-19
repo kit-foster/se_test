@@ -6,7 +6,9 @@ const server = require("../server");
 chai.use(chaiHttp);
 
 describe('get users', function() {
+
     it ("Should Fecth all the user", (done)=>{
+        
         chai.request('http://localhost:5000')
             .get("/user/")
             .end((err, result)=>{
